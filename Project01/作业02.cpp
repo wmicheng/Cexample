@@ -21,9 +21,7 @@
 using namespace std;
 int main() {
 	float a, b, c;
-	cin >> a;
-	cin >> b;
-	cin >> c;
+	cin >> a;	cin >> b;	cin >> c;
 	if (a > (c + b) && b > (a + c) && c > (a + b))
 		cout << "这不是三角形";
 	if (fabs(a) == fabs(b) == fabs(c))
