@@ -15,8 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello.cpp">
-      <Filter>头文件</Filter>
+    <ClCompile Include="01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="04.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="05.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业02.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
