@@ -17,18 +17,24 @@
 //否则判断其是否有两边的平方和等于第三边的平方，条件成立则判断其为直角三角形；
 //否则判断其为普通三角形。
 #include<iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 int main() {
 	float a, b, c;
+	cout << "输入a、b、c三条边\n";
 	cin >> a;	cin >> b;	cin >> c;
 	if (a > (c + b) && b > (a + c) && c > (a + b))
 		cout << "这不是三角形";
 	if (fabs(a) == fabs(b) == fabs(c))
 		cout << "其为等边三角形";
-	else if (fabs(a) == fabs(b) || fabs(a) == fabs(c) || fabs(c) == fabs(b))
-		cout << "其为等腰三角形";
-	else if (pow(a, 2) == (pow(c, 2) + pow(b, 2)) || pow(b, 2) == (pow(a, 2) + pow(c, 2)) || pow(c, 2) == (pow(a, 2) + pow(b, 2)))
+	else if ((fabs(a) == fabs(b) || fabs(a) == fabs(c) || fabs(c) == fabs(b))) 
+	{
+		if (fabs(pow(a, 2)) == (fabs(pow(c, 2)) + fabs(pow(b, 2))) || (fabs(pow(b, 2)) == (fabs(pow(a, 2)) + fabs(pow(c, 2)))) || (fabs(pow(c, 2)) == fabs((pow(a, 2)) + fabs(pow(b, 2)))))
+			cout << "其为等腰直角三角形";
+		else
+			cout << "其为等腰三角形";
+	}
+	else if (fabs(pow(a, 2)) == (fabs(pow(c, 2)) + fabs(pow(b, 2))) || (fabs(pow(b, 2)) == (fabs(pow(a, 2)) + fabs(pow(c, 2)))) || (fabs(pow(c, 2)) == fabs((pow(a, 2)) + fabs(pow(b, 2)))))
 		cout << "其为直角三角形";
 	else
 		cout << "其为普通三角形";
