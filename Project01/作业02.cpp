@@ -22,7 +22,7 @@ using namespace std;
 int main() {
 	float a, b, c;
 	cout << "输入a、b、c三条边\n";
-	cin >> a;	cin >> b;	cin >> c;
+	cin >> a>> b>>c;
 	if (a > (c + b) && b > (a + c) && c > (a + b))
 		cout << "这不是三角形";
 	if (fabs(a) == fabs(b) == fabs(c))
