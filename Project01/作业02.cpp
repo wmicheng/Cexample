@@ -17,6 +17,7 @@
 //否则判断其是否有两边的平方和等于第三边的平方，条件成立则判断其为直角三角形；
 //否则判断其为普通三角形。
 //注意！！不能直接用 == 进行判断   要用fabs(XXX) < 1E-6
+
 #include<iostream>
 #include <cmath>
 using namespace std;

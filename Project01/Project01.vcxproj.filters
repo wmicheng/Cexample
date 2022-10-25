@@ -15,25 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01.cpp">
+    <ClCompile Include="hello world.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="02.cpp">
+    <ClCompile Include="基本输入输出.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="03.cpp">
+    <ClCompile Include="换行.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="04.cpp">
+    <ClCompile Include="变量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="05.cpp">
+    <ClCompile Include="字节内存.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="作业01.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="作业02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业04.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
