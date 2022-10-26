@@ -1,5 +1,5 @@
 //作业2:输入三角形三条边, 
-//判断三角形的类型(等边、普通等腰, 等腰直角, 普通直角, 普通, 不是
+//判断三角形的类型(等边、普通等腰, 等腰直角, 普通直角, 普通, 不是）
 //float(double) a, b, c: == b & 是b = C && a = C, 实数数据相等判断, 
 
 
@@ -27,7 +27,7 @@ int main() {
 	cin >> a >> b >> c;
 	if (a > (c + b) && (a - c) && c > (a + b))
 		cout << "这不是三角形";
-	else if (fabs(a - b) < 1e-6 && fabs(a - c) < 1e-6)
+	else if (fabs(a - b) < 1e-6 && fabs(a - c) < 1e-6)//浮点数直接比较大小会导致错误
 		cout << "其为等边三角形";
 	else if (fabs(a - b) < 1e-6 || fabs(a - c) < 1e-6 || fabs(b - c) < 1e-6)
 	{
