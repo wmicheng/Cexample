@@ -11,19 +11,18 @@ int main() {
 	Triangle(a, b, c);
 }
 void Triangle(float a, float b, float c) {
-
 	if (a > (c + b) && (a - c) && c > (a + b))
 		cout << "这不是三角形";
 	else if (fabs(a - b) < 1e-6 && fabs(a - c) < 1e-6)
 		cout << "其为等边三角形";
 	else if (fabs(a - b) < 1e-6 || fabs(a - c) < 1e-6 || fabs(b - c) < 1e-6)
 	{
-		if (fabs(a * a + b * b - c * c) < 1e-6 || fabs(a * a + c * c - b * b) < 1e-6 || fabs(b * b + c * c - a * a) < 1e-6)
+		if (fabs(pow(a, 2) + pow(b, 2) - pow(c, 2)) < 1e-6 || fabs(pow(a, 2) + pow(c, 2) - pow(b, 2)) < 1e-6 || fabs(pow(b, 2) + pow(c, 2) - pow(a, 2)) < 1e-6)
 			cout << "其为等腰直角三角形";
 		else
 			cout << "其为等腰三角形";
 	}
-	else if (fabs(a * a + b * b - c * c) < 1e-6 || fabs(a * a + c * c - b * b) < 1e-6 || fabs(b * b + c * c - a * a) < 1e-6)
+	else if (fabs(pow(a, 2) + pow(b, 2) - pow(c, 2)) < 1e-6 || fabs(pow(a, 2) + pow(c, 2) - pow(b, 2)) < 1e-6 || fabs(pow(b, 2) + pow(c, 2) - pow(a, 2)) < 1e-6)
 		cout << "其为直角三角形";
 	else
 		cout << "其为普通三角形";
