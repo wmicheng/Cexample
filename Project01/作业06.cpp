@@ -1,4 +1,4 @@
-//按姓名?查找学生姓名并排序？
+//按姓名查找学生姓名并排序
 #include<iostream>
 #include<cstring>
 #define N 6
