@@ -1,4 +1,4 @@
-//用new创建动态数组, 完成数据插入、添加和删除的操作。
+//用new创建动态数组, 完成数据插入、添加和删除的操作
 #include<iostream>
 using namespace std;
 //使用typedef为struct node 定义新类型student
